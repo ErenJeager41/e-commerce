@@ -1,0 +1,62 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 id="form-title">Sign Up</h1>
+      <div class="underline"></div>
+      <div class="btn-feild">
+        <button type="button" id="signupBtn">Sign up</button>
+        <button type="button" id="signinBtn">Sign In</button>
+      </div>
+
+      <form id="signup-form" method="post" action="insert.php">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="firstName" name="first_name" placeholder="First Name" required>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="lastName" name="last_name" placeholder="Last Name" required>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-at"></i>
+          <input type="email" id="signupEmail" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" id="signupPassword" name="password" placeholder="Password" required>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" id="confirmPassword" name="confirm_pass" placeholder="Confirm Password" required>
+        </div>
+        <p>Password should be at least 6 characters, include a number or symbol.</p>
+        <button type="submit" class="btn">Register</button>
+      </form>
+
+      <form id="signin-form" style="display: none;">
+        <div class="input-field">
+          <i class="fa-solid fa-at"></i>
+          <input type="email" id="loginEmail" placeholder="Email" required>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
