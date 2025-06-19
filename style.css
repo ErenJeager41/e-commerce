@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('cyan.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  min-width: 350px;
+  background-color: black;
+  padding: 55px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  color: aqua;
+}
+
+.form-box .underline {
+  width: 30px;
+  height: 4px;
+  margin: 10px auto 50px auto;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.input-field {
+  background: #eaeaea;
+  margin: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-field i {
+  margin-left: 10px;
+  color:purple;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 16px;
+}
+form{
+  text-align: left;
+  font-size: 13px;
+}
+
+.btn-feild {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.btn-feild button {
+  background-color: aqua;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: purple;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
